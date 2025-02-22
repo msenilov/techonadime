@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tech On A Dime</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap');
+        
+        body {
+            font-family: 'Orbitron', sans-serif;
+            background-color: #121212;
+            color: #fff;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background: #1e1e1e;
+            padding: 15px;
+            text-align: center;
+            font-size: 24px;
+            color: #0f87ff;
+        }
+        nav ul {
+            list-style: none;
+            padding: 0;
+        }
+        nav ul li {
+            display: inline;
+            margin: 0 15px;
+        }
+        nav ul li a {
+            color: #0f87ff;
+            text-decoration: none;
+            font-weight: bold;
+            transition: color 0.3s;
+        }
+        nav ul li a:hover {
+            color: #ffcc00;
+        }
+        .container {
+            width: 80%;
+            margin: 20px auto;
+            padding: 20px;
+            background: #1e1e1e;
+            border-radius: 10px;
+            box-shadow: 0px 0px 10px rgba(255, 255, 255, 0.1);
+        }
+        .post {
+            border-bottom: 1px solid #444;
+            padding: 15px 0;
+        }
+        .post h3 {
+            color: #0f87ff;
+        }
+        .read-more {
+            display: inline-block;
+            background: #0f87ff;
+            color: #121212;
+            padding: 10px 15px;
+            border-radius: 5px;
+            text-decoration: none;
+            font-weight: bold;
+            transition: 0.3s;
+        }
+        .read-more:hover {
+            background: #ffcc00;
+            color: #121212;
+        }
+        footer {
+            text-align: center;
+            padding: 10px;
+            background: #1e1e1e;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            let posts = document.querySelectorAll(".read-more");
+            posts.forEach(post => {
+                post.addEventListener("mouseover", function() {
+                    this.style.backgroundColor = "#ffcc00";
+                    this.style.color = "#121212";
+                });
+                post.addEventListener("mouseout", function() {
+                    this.style.backgroundColor = "#0f87ff";
+                    this.style.color = "#121212";
+                });
+            });
+        });
+    </script>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="#">Reviews</a></li>
+                <li><a href="#">Build Guides</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+        <h1>Tech On A Dime</h1>
+    </header>
+    
+    <div class="container">
+        <h2>Featured Article</h2>
+        <div class="post">
+            <h3>Best Budget GPUs for 2025</h3>
+            <p>Looking for the best budget GPUs? Here’s our top picks...</p>
+            <a href="best-budget-gpus-2025.html" class="read-more">Read More</a>
+        </div>
+        
+        <h2>Recent Posts</h2>
+        <div class="post">
+            <h3>How to Build a $500 Gaming PC</h3>
+            <p>Step-by-step guide to assembling a budget gaming rig...</p>
+            <a href="how-to-build-500-gaming-pc.html" class="read-more">Read More</a>
+        </div>
+        <div class="post">
+            <h3>Top Free-to-Play Games for Low-End PCs</h3>
+            <p>Enjoy gaming without breaking the bank with these F2P titles...</p>
+            <a href="top-free-to-play-games-low-end.html" class="read-more">Read More</a>
+        </div>
+        <div class="post">
+            <h3>Essential Gaming Accessories on a Budget</h3>
+            <p>Upgrade your setup with these affordable gaming accessories...</p>
+            <a href="essential-gaming-accessories.html" class="read-more">Read More</a>
+        </div>
+        <div class="post">
+            <h3>Optimizing Windows for Gaming Performance</h3>
+            <p>Boost FPS and lower latency with these Windows tweaks...</p>
+            <a href="optimizing-windows-gaming.html" class="read-more">Read More</a>
+        </div>
+    </div>
+    
+    <footer>
+        <p>&copy; 2025 Tech On A Dime | All rights reserved.</p>
+    </footer>
+</body>
+</html>
